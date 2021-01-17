@@ -61,25 +61,25 @@ insert into stock(id, quantity) values(10,1);
 
 -- Order info
 
-insert into orderinfo(id, date_placed, date_shipped, shipping) values(3,'03-13-2004','03-17-2004', 2.99);
-insert into orderinfo(id, date_placed, date_shipped, shipping) values(8,'06-23-2004','06-24-2004', 0.00);
-insert into orderinfo(id, date_placed, date_shipped, shipping) values(15,'09-02-2004','09-12-2004', 3.99);
-insert into orderinfo(id, date_placed, date_shipped, shipping) values(13,'09-03-2004','09-10-2004', 2.99);
-insert into orderinfo(id, date_placed, date_shipped, shipping) values(8,'07-21-2004','07-24-2004', 0.00);
+insert into orderinfo(customer_id, date_placed, date_shipped, shipping) values(3,'03-13-2004','03-17-2004', 2.99);
+insert into orderinfo(customer_id, date_placed, date_shipped, shipping) values(8,'06-23-2004','06-24-2004', 0.00);
+insert into orderinfo(customer_id, date_placed, date_shipped, shipping) values(15,'09-02-2004','09-12-2004', 3.99);
+insert into orderinfo(customer_id, date_placed, date_shipped, shipping) values(13,'09-03-2004','09-10-2004', 2.99);
+insert into orderinfo(customer_id, date_placed, date_shipped, shipping) values(8,'07-21-2004','07-24-2004', 0.00);
 
 -- Order line
 
-insert into orderline(id, item_id, quantity) values(1, 4, 1);
-insert into orderline(id, item_id, quantity) values(1, 7, 1);
-insert into orderline(id, item_id, quantity) values(1, 9, 1);
-insert into orderline(id, item_id, quantity) values(2, 1, 1);
-insert into orderline(id, item_id, quantity) values(2, 10, 1);
-insert into orderline(id, item_id, quantity) values(2, 7, 2);
-insert into orderline(id, item_id, quantity) values(2, 4, 2);
-insert into orderline(id, item_id, quantity) values(3, 2, 1);
-insert into orderline(id, item_id, quantity) values(3, 1, 1);
-insert into orderline(id, item_id, quantity) values(4, 5, 2);
-insert into orderline(id, item_id, quantity) values(5, 1, 1);
-insert into orderline(id, item_id, quantity) values(5, 3, 1);
+insert into orderline(orderinfo_id, item_id, quantity) values(1, 4, 1);
+insert into orderline(orderinfo_id, item_id, quantity) values(1, 7, 1);
+insert into orderline(orderinfo_id, item_id, quantity) values(1, 9, 1);
+insert into orderline(orderinfo_id, item_id, quantity) values(2, 1, 1);
+insert into orderline(orderinfo_id, item_id, quantity) values(2, 10, 1);
+insert into orderline(orderinfo_id, item_id, quantity) values(2, 7, 2);
+insert into orderline(orderinfo_id, item_id, quantity) values(2, 4, 2);
+insert into orderline(orderinfo_id, item_id, quantity) values(3, 2, 1);
+insert into orderline(orderinfo_id, item_id, quantity) values(3, 1, 1);
+insert into orderline(orderinfo_id, item_id, quantity) values(4, 5, 2);
+insert into orderline(orderinfo_id, item_id, quantity) values(5, 1, 1);
+insert into orderline(orderinfo_id, item_id, quantity) values(5, 3, 1);
 
 
