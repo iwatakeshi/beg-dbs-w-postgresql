@@ -51,13 +51,13 @@ insert into barcode(barcode_ean, item_id) values('2239872376872', 11);
 
 -- Stock
 
-insert into stock(id, quantity) values(1,12);
-insert into stock(id, quantity) values(2,2);
-insert into stock(id, quantity) values(4,8);
-insert into stock(id, quantity) values(5,3);
-insert into stock(id, quantity) values(7,8);
-insert into stock(id, quantity) values(8,18);
-insert into stock(id, quantity) values(10,1);
+insert into stock(item_id, quantity) values(1,12);
+insert into stock(item_id, quantity) values(2,2);
+insert into stock(item_id, quantity) values(4,8);
+insert into stock(item_id, quantity) values(5,3);
+insert into stock(item_id, quantity) values(7,8);
+insert into stock(item_id, quantity) values(8,18);
+insert into stock(item_id, quantity) values(10,1);
 
 -- Order info
 
